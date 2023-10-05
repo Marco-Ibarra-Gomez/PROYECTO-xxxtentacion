@@ -1,0 +1,6 @@
+.no-gif, .efecto:hover .gif{
+    display: flex;
+}
+.gif, .efecto:hover .no-gif{
+    display: none;
+}
