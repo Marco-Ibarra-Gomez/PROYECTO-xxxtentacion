@@ -1,6 +1,9 @@
 .no-gif, .efecto:hover .gif{
     display: flex;
+    cursor: pointer; 
 }
+
 .gif, .efecto:hover .no-gif{
     display: none;
+    cursor: pointer;
 }
