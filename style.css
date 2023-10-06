@@ -5,5 +5,17 @@
 
 .gif, .efecto:hover .no-gif{
     display: none;
-    cursor: pointer;
+}
+.salto{
+    margin-bottom: 40px;
+}
+.salto2{
+    margin-bottom: 70px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.imagen{
+    margin: 0px 20px;
 }

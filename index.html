@@ -10,39 +10,178 @@
     <style>
         .video-container {
             text-align: center;
+            margin-top: 140px;
         }
         .image-container {
             align-items: center;
-            margin-top: 100px ;
+            margin-top: 0px;
+        }
+        
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
         }
         .encabezado {
-        text-align: center;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            transition: 0.5s;
+            padding: 30px 20px;
+            text-decoration: none;
+        }
+        header.abajo{
+            background-color: white;
+            padding: 15px 20px;
+        }
+        header .logo{
+            position: relative;
+            color: white;
+            text-decoration: none;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        header ul{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        header ul li{
+            list-style: none;
+        }
+        header ul li a{
+            position: relative;
+            margin: 0px 15px;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 2px;
+            font-weight: 500;
+            transition: 0.5s;
+        }
+        header.abajo .logo,
+        header.abajo .encabezado,
+        header.abajo ul li a{
             color: black;
         }
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
     <header>
-        <h1 class="encabezado" style="background-color: white;">XXXTENTACION</h1>
+        <a href="#" class="logo"><h1 class="encabezado">XXXTENTACION</h1></a>
+    <nav>
+        <ul>
+            <li><a href="index.html#título">Biografía</a></li>
+            <li><a href="index.html#título2">Discografía</a></li>
+            <li><a href="index.html#título3">Exitos</a></li>
+            <li><a href="index.html#título4">Giras</a></li>
+            <li><a href="index.html#título5">Redes sociales</a></li>
+        </ul>
+    </nav>
     </header>
+    <section class="zona">
+    </section>
+    <script type="text/javascript">
+        window.addEventListener ("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY>0);
+        })
+    </script>
 
 <body style="background-color: black;"> 
     <div class="video-container">
         <video muted autoplay loop>
             <source src="Video/Video final.mp4" type="video/mp4">
         </video>    
-    <div class="efecto" class="image-container">
+    <div class="efecto">
         <a href="index.html#título">
-            <img height="100px" width="100px" src="image/flecha.png" alt="" class="no-gif">
-            <img height="100px" width="100px" src="image/gift flecha.gif" alt="" class="gif">
+            <img class="image-container" height="100px" width="100px" style="justify-content: center;" src="image/gift flecha.gif" alt="" class="gif">
         </a>
     </div>
 
-    <a name="título"><h2 style="color: white;"><b>Biografía de xxxtentacion</b></h2></a>
-    <p style="color: white;">Jahseh Dwayne Ricardo Onfroy, conocido por su nombre artístico XXXTENTACION, fue un rapero, cantante y compositor estadounidense. A pesar de haber sido una figura controvertida debido a sus problemas legales, 
+    <a name="título"><p class="salto2">Punto de inflexión</p></a>
+        <h2 style="color: white;"><b>Biografía</b></h2>
+        <br><p class="imagen" style="color: white; text-align: left;">Jahseh Dwayne Ricardo Onfroy, conocido por su nombre artístico XXXTENTACION, fue un rapero, cantante y compositor estadounidense. A pesar de haber sido una figura controvertida debido a sus problemas legales, 
         Onfroy ganó con su música, durante su corta carrera, un culto de aficionados entre su base de aficionados jóvenes, con temas de depresión y alienación. Los críticos y fanáticos a menudo destacan su versatilidad musical 
         al explorar géneros como el emo, drill, trap, lo-fi, indie rock, nu metal, hip hop, R&B contemporáneo y el punk. Se le considera una figura destacada en los géneros de rap emo y rap de SoundCloud, que atrajeron la atención 
-        general durante mediados y finales de la década del 2010, siendo el rapero emo más vendido de todos los tiempos.</p>
+        general durante mediados y finales de la década del 2010, siendo el rapero emo más vendido de todos los tiempos.
+        </p>
+
+        <br><p class="imagen" style="color: white; text-align: left;">
+        Nacido en Plantation, Florida, XXXTENTACION pasó la mayor parte de su infancia en Lauderhill. Comenzó a escribir música después de ser liberado de un centro de detención juvenil y pronto comenzó su carrera 
+        musical en SoundCloud en 2013, empleando estilos y técnicas que no eran convencionales en la música rap, como la saturación y los instrumentos pesados con acompañamiento de guitarra, inspirándose en la tercera
+        ola emo y grunge. En 2014, formó el underground colectivo Members Only junto con otros miembros, y pronto se convirtió en una figura popular del SoundCloud rap.
+        Jahseh Onfroy se había enfrentado a una variedad de asuntos legales a lo largo de su vida, sobre todo la controversia que surgió de los cargos de agresión que 
+        se le impusieron en 2016 cuando tenía 18 años. Algunos han descrito la historia de problemas legales y supuesta violencia de Jahseh como una definición de su legado,
+        mientras que otros han criticado la representación que los medios hacen de él, argumentando que las mejoras percibidas en su carácter más adelante en la vida han convertido
+        su legado en una historia del poder de las segundas oportunidades y la redención.
+        </p>
+
+        <br><p class="imagen" style="color: white; text-align: left;">
+        El 18 de junio de 2018, Onfroy, de 20 años, fue asesinado cuando le dispararon cerca de un concesionario de motocicletas en Deerfield Beach, Florida. Los atacantes huyeron de la escena en un SUV después 
+        de robar su bolso Louis Vuitton que contenía 50000 dólares en efectivo. Cuatro sospechosos fueron arrestados y acusados de asesinato en primer grado, entre otros cargos. 
+        No se ha fijado fecha para el juicio de los acusados y se sigue investigando el motivo del homicidio. En agosto de 2022, uno de los cuatro hombres se declaró culpable de asesinato en segundo grado a 
+        cambio de testificar contra los otros tres acusados.
+        </p>
+
+        <br><a href="https://soundcloud.com/jahseh-onfroy" target="_blank"><img class="salto" src="image/xxxtentacion-wiki-1200x630.jpg" alt=""></a>
+
+    <a name="título2"><p class="salto2">Punto de inflexión</p></a>
+        <br><h2 style="color: white;"><b>Discografía</b></h2>
+        <br><p class="imagen" style="color: white; text-align: left;">
+            XXXTentacion lanzó cuatro álbumes de estudio (dos de los cuales fueron lanzamientos póstumos), dos mixtapes, cuatro mixtapes colaborativos (uno de los cuales fue un lanzamiento póstumo),
+            siete obras de teatro extendidas y 28 sencillos (incluidos ocho como artista destacado). Hasta junio de 2018, vendió más de 25 millones de unidades equivalentes a 
+            álbumes en los Estados Unidos. Jahseh Onfroy fue certificado por la venta de más de 20 millones de discos por la Recording Industry Association of America. Hasta septiembre de 
+            2022, ha vendido más de 60 millones de discos en los Estados Unidos.
+        </p>
+
+        <br><p class="imagen" style="color: white; text-align: left;">
+            En junio de 2013 lanzó su primera canción "News/Flock" en la plataforma SoundCloud. Su primer mixtape oficial XXX (sin dominio) se lanzó el 5 de marzo de 2014, pero luego se 
+            eliminaron muchas pistas y algunas aún no se han descubierto. Ice Hotel fue el primer proyecto que se puso a disposición del público. Lanzó varios mixtapes a mitad de la década de los 2010 y varios 
+            Extended Play durante este tiempo, incluidos "ItWillAllBeOverSoon" y "Red Light District", pero luego fueron eliminados y desechados, algunas canciones seleccionadas de los EP 
+            desechados aparecieron en proyectos posteriores. En diciembre de 2015 lanzó su exitoso sencillo "Look at Me!", que recibió millones de reproducciones en SoundCloud antes de ser 
+            relanzado a través de Empire Distribution en febrero de 2017. El sencillo alcanzó el puesto 34 en el Billboard Hot 100. Tiempo más tarde fue certificado Platino por la RIAA. 
+            En mayo del mismo año, lanzó su primer mixtape comercial, Revenge, que alcanzó el puesto 28 en el Billboard 200
+        </p>
+
+        <br><p class="imagen" style="color: white; text-align: left;">
+            Su álbum de estudio debut "17" fue lanzado el 25 de agosto de 2017 y debutó en el número 2 en el Billboard 200. El álbum generó tres sencillos: "Revenge" con certificación de oro, 
+            "Jocelyn Flores" cinco certificaciones por platino y seis certificaciones de platino por "Fuck Love". En diciembre de 2017, lanzó su séptimo Extended Play denominado A Ghetto 
+            Christmas Carol con la producción manejada principalmente por el productor discográfico estadounidense Ronny J y su persona, junto con Cubeatz y J Dilla. Su segundo álbum de 
+            estudio, ? fue lanzado en marzo de 2018 y debutó en el número 1 en el Billboard 200. El álbum generó tres sencillos: "Sad!", con certificación de diamante, "Changes" y "Moonlight"
+            , certificado con tres y seis por platino, respectivamente por el Recording Industry Association of America. Members Only Vol. 4 salió el 23 de enero de 2019, fecha en la que 
+            habría sido su cumpleaños número 21.234. El álbum debutó en el puesto número 23 en el Billboard 200 y certificando 16000 unidades equivalentes a álbumes, de las cuales 2000 
+            provienen de ventas puras de álbumes en su primera semana.
+        </p><br>
+        
+
+    <div class="salto" class="container">
+            <a href="https://youtube.com/playlist?list=OLAK5uy_lqRFvHXwqV_C6J-_ruobnyZgR2K6Ql8Qk&si=f8vwXnvOcCfbIb0d" target="_blank"><img class="imagen" width="300" height="300" src="image/Album.jpg" alt=""></a>
+            <a href="https://youtube.com/playlist?list=OLAK5uy_lPZ2RMEqcRCzOqTw1ujpXxQgaM5JxJYBk&si=a1tIcA_BluP6H-Hk" target="_blank"><img class="imagen" width="300" height="300" src="image/17.jpg" alt=""></a>
+            <a href="https://youtube.com/playlist?list=OLAK5uy_l_jXPU7octqI8qVddbzoZaWSD43_RUC8w&si=CQnShxug3gQ1s4L0" target="_blank"><img class="imagen" width="300" height="300" src="image/final album.jpg" alt=""></a>
+    </div>
+    <div class="salto2" class="container">
+        <a href="https://youtu.be/HICfkzRKB8g?si=vZcTC_1rGzSTrmcy" target="_blank"><img class="imagen" width="300" height="300" src="image/ghetto.jpg" alt=""></a>
+        <a href="https://youtube.com/playlist?list=OLAK5uy_neOU77U1V7pAaIanxZ232qLiWMeiXAqj4&si=9lWvxhTdC943Bs4f" target="_blank"><img class="imagen" width="300" height="300" src="image/members.jpg" alt=""></a>
+        <a href="https://youtube.com/playlist?list=OLAK5uy_m7l8pAn5tynGPouW3DnxXIYekotptdrOA&si=TUrI4Rn9xRwBNvHd" target="_blank"><img class="imagen" width="300" height="300" src="image/revenge.jpeg" alt=""></a>
+    </div>
+        
+
 
     
 
