@@ -8,7 +8,7 @@
 
     <title>XXXTentacion</title>
     <style>
-        .video-container {
+        .video-container{
             text-align: center;
             margin-top: 140px;
         }
@@ -81,6 +81,7 @@
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
+<body style="background-color: black;">
     <header>
         <a href="#" class="logo"><h1 class="encabezado">XXXTENTACION</h1></a>
     <nav>
@@ -95,14 +96,12 @@
     </header>
     <section class="zona">
     </section>
-    <script type="text/javascript">
+    <script>
         window.addEventListener ("scroll", function(){
             var header = document.querySelector("header");
             header.classList.toggle("abajo", window.scrollY>0);
         })
     </script>
-
-<body style="background-color: black;"> 
     <div class="video-container">
         <video muted autoplay loop>
             <source src="Video/Video final.mp4" type="video/mp4">
